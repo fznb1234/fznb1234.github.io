@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" >
+	const url = new URL(window.location.href);
+	if (!url.searchParams.has('_t')) {
+	  url.searchParams.append('_t', Date.now());
+	  window.location.replace(url.toString());
+	}
+	</script>
+	<title>密码访问</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" src="//crossfb-70080.picnjc.qpic.cn/g.52000000-r.e620f/1689913526652_hf_0"></script>
+</head>
+<body>
+	
+	<form onsubmit="return checkPassword()">
+		<h1 align="center" style=" 
+                    font-size: 25px; 
+                    color:#152c5b; 
+                    font-weight:bold;
+                     margin-bottom: 20px;
+                    ">输入密码解锁此网址</h1>
+        <p align="center" style="
+                    color:#7f8da0;  
+                    font-size: 15px;
+                    margin-bottom: 40px;
+                    ">此网址的访问受到限制，请输入密码进行查看</p>
+		
+		<input type="password" id="password" name="password">
+		<button type="submit" class="btn btn-primary" style=" margin-bottom: 20px;">解锁</button>
+		
+	</form>
+	<div style="text-align: center;">
+  <h5><a href="http://ggxm-1309649999.cos.ap-nanjing.myqcloud.com/iEZU?9w5">密码获取详细教程</a></h5>
+  <h3><a>↓ 获取密码方法 ↓</a></h3>
+  <div style="display: flex; justify-content: center;">
+    <img style="max-width: 60%; height: auto;" src="data:image/png;base64,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" alt="暂无图片">
+  </div>
+  <p style="text-align: center;"><a>长按图片保存用VX扫一扫二维码<br>点击右下角详情，观看广告后自动复制密码！</a></p>
+</div>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "0328") { 
+				window.location.href = "https://fznb1234.github.io/8S22L22054"; 
+				return false;
+			} else {
+				alert("密码错误，请重新输入！");
+				return false;
+			}
+		}
+	</script>
+	
+	</body>
+</html>
